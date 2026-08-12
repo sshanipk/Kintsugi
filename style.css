@@ -1,0 +1,130 @@
+/* ===== INTRO SECTION ===== */
+.intro {
+    background: linear-gradient(135deg, #fff8e1, #ffe0b2);
+    color: #3e2723;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.intro-content h2 {
+    font-size: 2.8rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.intro-content p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.cta {
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #b8860b;
+    transform: scale(1.05);
+}
+
+/* ===== MAIN PIC AT TOP ===== */
+.hero img {
+    width: 100%;
+    height: auto;        /* keeps natural size, no zoom */
+    display: block;
+}
+
+/* ===== PAGE WIDTH CONTROL ===== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+    color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    color: #d4af37;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 300px;
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item h3 {
+    color: #d4af37;
+    margin-top: 10px;
+}
+
+.item p {
+    color: #fff;
+}
+
+/* ===== FADE-IN ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    background-color: #000;
+    animation: fadeIn 2s ease-in;
+}
+
+/* ===== SIMPLE HOVER ZOOM (NO CLICK) ===== */
+
+.gallery .item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery .item img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+
